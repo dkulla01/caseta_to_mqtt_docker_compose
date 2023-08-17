@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  caseta_to_mqtt:
+    image: caseta_to_mqtt:latest
+    volumes:
+      - etc-caseta-to-mqtt:/etc/caseta_to_mqtt
+    restart: unless-stopped
+    environment:
+      -""
