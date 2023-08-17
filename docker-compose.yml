@@ -8,4 +8,4 @@ services:
     restart: unless-stopped
     environment:
       - "LOGLEVEL=DEBUG"
-      - "ENV_FOR_DYNACONF=${EMV_FOR_DYNACONF?err}"
+      - "ENV_FOR_DYNACONF=${ENV_FOR_DYNACONF?err}"
