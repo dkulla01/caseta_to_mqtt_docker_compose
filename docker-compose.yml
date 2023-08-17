@@ -9,3 +9,9 @@ services:
     environment:
       - "LOGLEVEL=DEBUG"
       - "ENV_FOR_DYNACONF=${ENV_FOR_DYNACONF?err}"
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    external: true
