@@ -7,4 +7,5 @@ services:
       - etc-caseta-to-mqtt:/etc/caseta_to_mqtt
     restart: unless-stopped
     environment:
-      -""
+      - "LOGLEVEL=DEBUG"
+      - "ENV_FOR_DYNACONF=..."
